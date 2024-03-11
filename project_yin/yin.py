@@ -59,7 +59,7 @@ args, parser = parse_input()
 
 sample_rate = args.samplerate
 block_size = args.blocksize
-energy_threshold = 0.005
+energy_threshold = 0.004
 cur_note = -1                    # note number
 pre_notes = [-1, -1, -1, -1]     # note numbers
 replace_count = 0
