@@ -13,6 +13,7 @@ import scipy.signal as signal
 from rtmidi.midiutil import open_midioutput
 from rtmidi.midiconstants import NOTE_OFF, NOTE_ON
 
+print("hello")
 
 def int_or_str(text):
     """Helper function for argument parsing."""
@@ -40,6 +41,7 @@ def parse_input():
         '-b', '--blocksize', type=int, default=2048, help='block size (in samples)')
     parser.add_argument(
         '-r', '--samplerate', type=float, help='sampling rate of audio device')
+    
     
     args = parser.parse_args()
 
