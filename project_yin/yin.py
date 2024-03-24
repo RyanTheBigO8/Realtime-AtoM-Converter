@@ -60,7 +60,8 @@ def parse_input():
 '''Global Variables'''
 sample_rate = None
 block_size = None
-energy_threshold = 0.005
+standard_energy = None
+minimum_energy = 0.0045
 cur_note = -1                
 pre_notes = [-1, -1, -1]     
 pre_velo = [-1, -1, -1]
@@ -68,8 +69,17 @@ call_count = 0
 KEY = None
 
 
-def correct_pitch(f0):
-    degrees = librosa.key_to_degrees(KEY)
+def decide_note(f0):
+    degrees_in_key = librosa.key_to_degrees(KEY)
+    degrees_in_key = np.append(degrees_in_key, degrees_in_key[0] + 12)
+
+    midi_note = librosa.hz_to_midi(f0)
+    degree = midi_note % 12
+    closest_id = np.argmin(np.abs(degrees_in_key - degree))
+    diff = degree - degrees_in_key[closest_id]
+
+    midi_note -= diff
+    return midi_note
 
 
 def audio_callback(indata, frames, time, status):
@@ -82,7 +92,8 @@ def audio_callback(indata, frames, time, status):
 
     # get the energy
     rms_energy = librosa.feature.rms(y=indata.T)[0]
-    if np.mean(rms_energy) < energy_threshold:
+    energy = np.mean(rms_energy)
+    if energy < minimum_energy:
         if cur_note != -1:
             print("Sending NoteOff event.")
             note_off = [NOTE_OFF, cur_note, 10]
@@ -92,7 +103,11 @@ def audio_callback(indata, frames, time, status):
         return
     
     # convert energy to velocity
+    '''
     cur_velo = round((np.mean(rms_energy) - 0.002) / 0.012 * 127)
+    cur_velo = min(127, cur_velo)
+    '''
+    cur_velo = round(75 * energy / standard_energy)
     cur_velo = min(127, cur_velo)
 
     # Apply a low pass filter on the audio clip
@@ -109,7 +124,7 @@ def audio_callback(indata, frames, time, status):
     f0 = np.median(pitches[0])
 
     # Convert pitch values to MIDI note numbers
-    temp = round(librosa.core.hz_to_midi(f0))
+    temp = decide_note(f0)
     
     # update 'cur_note'
     if temp == pre_notes[-1] and temp == pre_notes[-2]:
@@ -152,7 +167,16 @@ def update_plot(frame):
 
     # Process the current midi_notes and update the plot
     plt.plot(timestamp, note, marker='o', markersize=2, linestyle='None', color='blue')
-    
+
+
+def process_sample_recording(audio_data):
+    global standard_energy
+    start_idx = len(audio_data) // 3
+    end_idx = 2 * len(audio_data) // 3
+    rms_energy = librosa.feature.rms(y=audio_data[start_idx:end_idx])[0]
+    standard_energy = np.mean(rms_energy)
+    print(standard_energy)
+
 
 try:
     # parse inputs
@@ -164,9 +188,17 @@ try:
     port = sys.argv[1] if len(sys.argv) > 1 else None
 
     # prompt for key of song
-    KEY = input("Please specify the key of your song:")
+    KEY = input("Please specify the key of your song: ")
 
-    # Set up the plot
+    # Record a sample voicefile
+    duration = 3
+    print(f"Please sing any note for {duration} seconds.")
+    audio_data = sd.rec(int(duration * sample_rate), samplerate=sample_rate, channels=max(args.channels), dtype='float32')
+    sd.wait()  # Wait for the recording to complete
+    print("Recording complete.")
+    process_sample_recording(audio_data.T[0])
+
+    # Set up the plot 
     fig, ax = plt.subplots()
     timestamp, note, velocity = [], [], []
     ax.set_ylim(20, 100)
