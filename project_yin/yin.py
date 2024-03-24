@@ -13,7 +13,6 @@ import scipy.signal as signal
 from rtmidi.midiutil import open_midioutput
 from rtmidi.midiconstants import NOTE_OFF, NOTE_ON
 
-print("hello")
 
 def int_or_str(text):
     """Helper function for argument parsing."""
@@ -57,19 +56,25 @@ def parse_input():
 
     return args, parser
 
-args, parser = parse_input()
 
-sample_rate = args.samplerate
-block_size = args.blocksize
-energy_threshold = 0.004
-cur_note = -1                    # note number
-pre_notes = [-1, -1, -1, -1]     # note numbers
-replace_count = 0
+'''Global Variables'''
+sample_rate = None
+block_size = None
+energy_threshold = 0.005
+cur_note = -1                
+pre_notes = [-1, -1, -1]     
+pre_velo = [-1, -1, -1]
+call_count = 0
+KEY = None
+
+
+def correct_pitch(f0):
+    degrees = librosa.key_to_degrees(KEY)
 
 
 def audio_callback(indata, frames, time, status):
 
-    global cur_note, pre_notes
+    global cur_note, pre_notes, pre_velo, call_count
     note_on, note_off = [], []
     """This is called (from a separate thread) for each audio block."""
     if status:
@@ -83,10 +88,11 @@ def audio_callback(indata, frames, time, status):
             note_off = [NOTE_OFF, cur_note, 10]
             midiout.send_message(note_off)
             cur_note = -1
+            call_count = 0
         return
     
     # convert energy to velocity
-    cur_velo = round((np.mean(rms_energy) - 0.002) / 0.015 * 127)
+    cur_velo = round((np.mean(rms_energy) - 0.002) / 0.012 * 127)
     cur_velo = min(127, cur_velo)
 
     # Apply a low pass filter on the audio clip
@@ -99,26 +105,39 @@ def audio_callback(indata, frames, time, status):
                           sr=sample_rate, 
                           frame_length=2048, 
                           trough_threshold=0.2)
-    median_pitch = np.median(pitches[0])
+    
+    f0 = np.median(pitches[0])
 
     # Convert pitch values to MIDI note numbers
-    temp = round(librosa.core.hz_to_midi(median_pitch))
+    temp = round(librosa.core.hz_to_midi(f0))
     
     # update 'cur_note'
     if temp == pre_notes[-1] and temp == pre_notes[-2]:
-        if temp != cur_note and temp != -1:
+        if temp != cur_note:
             if cur_note != -1:
                 print("Sending NoteOff event.")
                 note_off = [NOTE_OFF, cur_note, 10]
                 midiout.send_message(note_off)
-            print(f"Sending NoteOn event. Velo = {cur_velo}")
+            print(f"Sending NoteOn event.")
             note_on = [NOTE_ON, temp, cur_velo]
             midiout.send_message(note_on)
+            call_count = 0
+        else:
+            if cur_velo > (pre_velo[-1] + 20) and call_count > 1:
+                print("Sending NoteOff event.")
+                note_off = [NOTE_OFF, cur_note, pre_velo[-1]]
+                midiout.send_message(note_off)
+                print(f"Sending NoteOn event.")
+                note_on = [NOTE_ON, temp, cur_velo]
+                midiout.send_message(note_on)
+                call_count = 0
+        call_count += 1
         cur_note = temp
         print(f"Detected MIDI Note: {librosa.midi_to_note(cur_note)}", cur_velo, flush=True)
     
-    # update 'pre_notes'
+    # update 'pre_notes' and 'pre_velo'
     pre_notes = pre_notes[1:] + [temp]
+    pre_velo = pre_velo[1:] + [cur_velo]
     
 
 def update_plot(frame):
@@ -136,31 +155,46 @@ def update_plot(frame):
     
 
 try:
+    # parse inputs
+    args, parser = parse_input()
+    sample_rate = args.samplerate
+    block_size = args.blocksize
+
+    # select midi output port
+    port = sys.argv[1] if len(sys.argv) > 1 else None
+
+    # prompt for key of song
+    KEY = input("Please specify the key of your song:")
+
     # Set up the plot
     fig, ax = plt.subplots()
     timestamp, note, velocity = [], [], []
     ax.set_ylim(20, 100)
     start_time = time.time()
 
-    # select midi output port
-    port = sys.argv[1] if len(sys.argv) > 1 else None
-
-    ### start threads ###
+    ''' start threads '''
     # THREAD 1: Audio Stream
     stream = sd.InputStream(
         device=args.device, channels=max(args.channels),
-        samplerate=args.samplerate, blocksize=block_size, callback=audio_callback)
+        samplerate=sample_rate, blocksize=block_size, callback=audio_callback)
     # THREAD 2: Midi Output Stream
     midiout, port_name = open_midioutput(port)
     # THREAD 3: Plot Stream
     # animation = FuncAnimation(fig, update_plot, interval=args.interval, blit=False)
     
-    with stream:
-        # plt.show()
-        sd.sleep(1000000)
+    try:
+        with stream:
+            while True:
+                # plt.show()
+                time.sleep(0.1)
+    
+    except KeyboardInterrupt:
+        print("**KEYBOARD INTERRUPT DETECTED**")
+        stream.stop()
+        stream.close()
+        del midiout
+        sys.exit(0)
 
-    del midiout
-    print('Exit')
 except Exception as e:
     parser.exit(type(e).__name__ + ': ' + str(e))
     sys.exit()
