@@ -2,7 +2,8 @@ import argparse
 import queue
 import sys
 import time
-import logging
+import math
+
 
 from matplotlib.animation import FuncAnimation
 import matplotlib.pyplot as plt
@@ -12,6 +13,7 @@ import librosa
 import scipy.signal as signal
 from rtmidi.midiutil import open_midioutput
 from rtmidi.midiconstants import NOTE_OFF, NOTE_ON
+import noisereduce as nr
 
 
 def int_or_str(text):
@@ -61,7 +63,7 @@ def parse_input():
 sample_rate = None
 block_size = None
 standard_energy = None
-minimum_energy = 0.0045
+minimum_energy = None
 cur_note = -1                
 pre_notes = [-1, -1, -1]     
 pre_velo = [-1, -1, -1]
@@ -89,9 +91,15 @@ def audio_callback(indata, frames, time, status):
     """This is called (from a separate thread) for each audio block."""
     if status:
         print(status, flush=True)
+    
+    # denoise the audio clip
+    # reduced_noise = nr.reduce_noise(y = indata.squeeze(), sr=sample_rate, thresh_n_mult_nonstationary=2, stationary=False)
+    
+    indata = indata.T
+    # reduced_noise = np.reshape(reduced_noise, (1, -1))
 
     # get the energy
-    rms_energy = librosa.feature.rms(y=indata.T)[0]
+    rms_energy = librosa.feature.rms(y=indata)[0]
     energy = np.mean(rms_energy)
     if energy < minimum_energy:
         if cur_note != -1:
@@ -107,19 +115,19 @@ def audio_callback(indata, frames, time, status):
     cur_velo = round((np.mean(rms_energy) - 0.002) / 0.012 * 127)
     cur_velo = min(127, cur_velo)
     '''
-    cur_velo = round(75 * energy / standard_energy)
+    cur_velo = round(75 * math.sqrt(energy / standard_energy))
     cur_velo = min(127, cur_velo)
 
     # Apply a low pass filter on the audio clip
     b, a = signal.butter(2, 8000, btype='low', analog=False, fs=sample_rate)
-    filtered_audio = signal.lfilter(b, a, indata.T)
+    filtered_audio = signal.lfilter(b, a, indata)
     
     # Get the pitches using librosa
     pitches = librosa.yin(y=filtered_audio, 
                           fmin=65, fmax=3000, 
                           sr=sample_rate, 
-                          frame_length=2048, 
-                          trough_threshold=0.2)
+                          frame_length=block_size, 
+                          trough_threshold=0.1)
     
     f0 = np.median(pitches[0])
 
@@ -138,7 +146,7 @@ def audio_callback(indata, frames, time, status):
             midiout.send_message(note_on)
             call_count = 0
         else:
-            if cur_velo > (pre_velo[-1] + 20) and call_count > 1:
+            if cur_velo > (pre_velo[-1] + 5) and call_count > 1:
                 print("Sending NoteOff event.")
                 note_off = [NOTE_OFF, cur_note, pre_velo[-1]]
                 midiout.send_message(note_off)
@@ -148,11 +156,12 @@ def audio_callback(indata, frames, time, status):
                 call_count = 0
         call_count += 1
         cur_note = temp
+        pre_velo = pre_velo[1:] + [cur_velo]
         print(f"Detected MIDI Note: {librosa.midi_to_note(cur_note)}", cur_velo, flush=True)
     
     # update 'pre_notes' and 'pre_velo'
     pre_notes = pre_notes[1:] + [temp]
-    pre_velo = pre_velo[1:] + [cur_velo]
+    
     
 
 def update_plot(frame):
@@ -170,13 +179,13 @@ def update_plot(frame):
 
 
 def process_sample_recording(audio_data):
-    global standard_energy
+    global standard_energy, minimum_energy
     start_idx = len(audio_data) // 3
     end_idx = 2 * len(audio_data) // 3
     rms_energy = librosa.feature.rms(y=audio_data[start_idx:end_idx])[0]
     standard_energy = np.mean(rms_energy)
-    print(standard_energy)
-
+    print(f"Standard Energy: {standard_energy}")
+    minimum_energy = standard_energy * 0.7
 
 try:
     # parse inputs
