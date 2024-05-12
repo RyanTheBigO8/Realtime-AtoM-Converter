@@ -1,0 +1,324 @@
+0,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 70,1,70,B0 01 46 
+1,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 69,1,69,B0 01 45 
+2,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 68,1,68,B0 01 44 
+3,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 67,1,67,B0 01 43 
+4,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 66,1,66,B0 01 42 
+5,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 64,1,64,B0 01 40 
+6,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 63,1,63,B0 01 3F 
+7,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 62,1,62,B0 01 3E 
+8,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 61,1,61,B0 01 3D 
+9,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 59,1,59,B0 01 3B 
+10,06:-8:-8.-648,in,Note on 60 Velocity 10,1,10,90 3C 0A 
+11,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 61,1,61,B0 01 3D 
+12,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 62,1,62,B0 01 3E 
+13,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 63,1,63,B0 01 3F 
+14,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 64,1,64,B0 01 40 
+15,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 66,1,66,B0 01 42 
+16,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 67,1,67,B0 01 43 
+17,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 68,1,68,B0 01 44 
+18,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 69,1,69,B0 01 45 
+19,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 70,1,70,B0 01 46 
+20,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 72,1,72,B0 01 48 
+21,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 73,1,73,B0 01 49 
+22,06:-8:-8.-648,in,Note off 60 Velocity 38,1,38,80 3C 26 
+23,06:-8:-8.-648,in,Controller Modulation Wheel (coarse): 74,1,74,B0 01 4A 
+24,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 75,1,75,B0 01 4B 
+25,07:-8:-8.-648,in,Note on 60 Velocity 68,1,68,90 3C 44 
+26,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 77,1,77,B0 01 4D 
+27,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 78,1,78,B0 01 4E 
+28,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 77,1,77,B0 01 4D 
+29,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 75,1,75,B0 01 4B 
+30,07:-8:-8.-648,in,Note on 67 Velocity 32,1,32,90 43 20 
+31,07:-8:-8.-648,in,Note off 60 Velocity 38,1,38,80 3C 26 
+32,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 77,1,77,B0 01 4D 
+33,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 78,1,78,B0 01 4E 
+34,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 79,1,79,B0 01 4F 
+35,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 80,1,80,B0 01 50 
+36,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 81,1,81,B0 01 51 
+37,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 83,1,83,B0 01 53 
+38,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 84,1,84,B0 01 54 
+39,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 85,1,85,B0 01 55 
+40,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 86,1,86,B0 01 56 
+41,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+42,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+43,07:-8:-8.-648,in,Note off 67 Velocity 60,1,60,80 43 3C 
+44,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+45,07:-8:-8.-648,in,Note on 67 Velocity 72,1,72,90 43 48 
+46,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+47,07:-8:-8.-648,in,Note on 69 Velocity 37,1,37,90 45 25 
+48,07:-8:-8.-648,in,Note off 67 Velocity 35,1,35,80 43 23 
+49,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+50,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+51,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+52,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+53,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 95,1,95,B0 01 5F 
+54,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 96,1,96,B0 01 60 
+55,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 97,1,97,B0 01 61 
+56,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 99,1,99,B0 01 63 
+57,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 100,1,100,B0 01 64 
+58,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 101,1,101,B0 01 65 
+59,07:-8:-8.-648,in,Note off 69 Velocity 40,1,40,80 45 28 
+60,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 102,1,102,B0 01 66 
+61,07:-8:-8.-648,in,Note on 69 Velocity 36,1,36,90 45 24 
+62,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 104,1,104,B0 01 68 
+63,07:-8:-8.-648,in,Controller Modulation Wheel (coarse): 102,1,102,B0 01 66 
+64,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 101,1,101,B0 01 65 
+65,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 100,1,100,B0 01 64 
+66,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 99,1,99,B0 01 63 
+67,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 97,1,97,B0 01 61 
+68,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 96,1,96,B0 01 60 
+69,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 95,1,95,B0 01 5F 
+70,08:-8:-8.-648,in,Note on 67 Velocity 37,1,37,90 43 25 
+71,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+72,08:-8:-8.-648,in,Note off 69 Velocity 65,1,65,80 45 41 
+73,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+74,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+75,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+76,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+77,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+78,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 86,1,86,B0 01 56 
+79,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 85,1,85,B0 01 55 
+80,08:-8:-8.-648,in,Note off 67 Velocity 14,1,14,80 43 0E 
+81,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 84,1,84,B0 01 54 
+82,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 83,1,83,B0 01 53 
+83,08:-8:-8.-648,in,Note on 65 Velocity 35,1,35,90 41 23 
+84,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 84,1,84,B0 01 54 
+85,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 85,1,85,B0 01 55 
+86,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 86,1,86,B0 01 56 
+87,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+88,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+89,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+90,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+91,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+92,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+93,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 95,1,95,B0 01 5F 
+94,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 96,1,96,B0 01 60 
+95,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 97,1,97,B0 01 61 
+96,08:-8:-8.-648,in,Note off 65 Velocity 46,1,46,80 41 2E 
+97,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 99,1,99,B0 01 63 
+98,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 100,1,100,B0 01 64 
+99,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 101,1,101,B0 01 65 
+100,08:-8:-8.-648,in,Note on 65 Velocity 62,1,62,90 41 3E 
+101,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 100,1,100,B0 01 64 
+102,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 99,1,99,B0 01 63 
+103,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 97,1,97,B0 01 61 
+104,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 96,1,96,B0 01 60 
+105,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 95,1,95,B0 01 5F 
+106,08:-8:-8.-648,in,Note on 64 Velocity 38,1,38,90 40 26 
+107,08:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+108,08:-8:-8.-648,in,Note off 65 Velocity 31,1,31,80 41 1F 
+109,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 95,1,95,B0 01 5F 
+110,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 96,1,96,B0 01 60 
+111,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 97,1,97,B0 01 61 
+112,09:-8:-8.-648,in,Note off 64 Velocity 39,1,39,80 40 27 
+113,09:-8:-8.-648,in,Note on 64 Velocity 59,1,59,90 40 3B 
+114,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 96,1,96,B0 01 60 
+115,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 95,1,95,B0 01 5F 
+116,09:-8:-8.-648,in,Note on 62 Velocity 22,1,22,90 3E 16 
+117,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+118,09:-8:-8.-648,in,Note off 64 Velocity 32,1,32,80 40 20 
+119,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 95,1,95,B0 01 5F 
+120,09:-8:-8.-648,in,Note off 62 Velocity 10,1,10,80 3E 0A 
+121,09:-8:-8.-648,in,Note on 62 Velocity 52,1,52,90 3E 34 
+122,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+123,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+124,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+125,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+126,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+127,09:-8:-8.-648,in,Note on 60 Velocity 38,1,38,90 3C 26 
+128,09:-8:-8.-648,in,Note off 62 Velocity 38,1,38,80 3E 26 
+129,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+130,09:-8:-8.-648,in,Controller Modulation Wheel (coarse): 86,1,86,B0 01 56 
+131,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 85,1,85,B0 01 55 
+132,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 84,1,84,B0 01 54 
+133,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 83,1,83,B0 01 53 
+134,10:-8:-8.-648,in,Note off 60 Velocity 10,1,10,80 3C 0A 
+135,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 81,1,81,B0 01 51 
+136,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 80,1,80,B0 01 50 
+137,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 79,1,79,B0 01 4F 
+138,10:-8:-8.-648,in,Note on 67 Velocity 49,1,49,90 43 31 
+139,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 80,1,80,B0 01 50 
+140,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 81,1,81,B0 01 51 
+141,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 83,1,83,B0 01 53 
+142,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 84,1,84,B0 01 54 
+143,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 85,1,85,B0 01 55 
+144,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 86,1,86,B0 01 56 
+145,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+146,10:-8:-8.-648,in,Note off 67 Velocity 37,1,37,80 43 25 
+147,10:-8:-8.-648,in,Note on 67 Velocity 84,1,84,90 43 54 
+148,10:-8:-8.-648,in,Note on 65 Velocity 47,1,47,90 41 2F 
+149,10:-8:-8.-648,in,Note off 67 Velocity 36,1,36,80 43 24 
+150,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+151,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+152,10:-8:-8.-648,in,Note off 65 Velocity 55,1,55,80 41 37 
+153,10:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+154,10:-8:-8.-648,in,Note on 65 Velocity 64,1,64,90 41 40 
+155,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+156,11:-8:-8.-648,in,Note on 64 Velocity 37,1,37,90 40 25 
+157,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+158,11:-8:-8.-648,in,Note off 65 Velocity 37,1,37,80 41 25 
+159,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+160,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 86,1,86,B0 01 56 
+161,11:-8:-8.-648,in,Note off 64 Velocity 77,1,77,80 40 4D 
+162,11:-8:-8.-648,in,Note on 64 Velocity 57,1,57,90 40 39 
+163,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 85,1,85,B0 01 55 
+164,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 84,1,84,B0 01 54 
+165,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 83,1,83,B0 01 53 
+166,11:-8:-8.-648,in,Note on 62 Velocity 38,1,38,90 3E 26 
+167,11:-8:-8.-648,in,Note off 64 Velocity 31,1,31,80 40 1F 
+168,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 81,1,81,B0 01 51 
+169,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 83,1,83,B0 01 53 
+170,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 84,1,84,B0 01 54 
+171,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 85,1,85,B0 01 55 
+172,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 86,1,86,B0 01 56 
+173,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+174,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 86,1,86,B0 01 56 
+175,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 85,1,85,B0 01 55 
+176,11:-8:-8.-648,in,Note off 62 Velocity 18,1,18,80 3E 12 
+177,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 84,1,84,B0 01 54 
+178,11:-8:-8.-648,in,Controller Modulation Wheel (coarse): 83,1,83,B0 01 53 
+179,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 81,1,81,B0 01 51 
+180,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 80,1,80,B0 01 50 
+181,12:-8:-8.-648,in,Note on 67 Velocity 29,1,29,90 43 1D 
+182,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 81,1,81,B0 01 51 
+183,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 83,1,83,B0 01 53 
+184,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 84,1,84,B0 01 54 
+185,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 85,1,85,B0 01 55 
+186,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 86,1,86,B0 01 56 
+187,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+188,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+189,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+190,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+191,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+192,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+193,12:-8:-8.-648,in,Note off 67 Velocity 43,1,43,80 43 2B 
+194,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 95,1,95,B0 01 5F 
+195,12:-8:-8.-648,in,Note on 67 Velocity 48,1,48,90 43 30 
+196,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+197,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+198,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+199,12:-8:-8.-648,in,Note on 65 Velocity 25,1,25,90 41 19 
+200,12:-8:-8.-648,in,Note off 67 Velocity 42,1,42,80 43 2A 
+201,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+202,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+203,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+204,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+205,12:-8:-8.-648,in,Note off 65 Velocity 67,1,67,80 41 43 
+206,12:-8:-8.-648,in,Note on 65 Velocity 88,1,88,90 41 58 
+207,12:-8:-8.-648,in,Note on 64 Velocity 48,1,48,90 40 30 
+208,12:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+209,12:-8:-8.-648,in,Note off 65 Velocity 56,1,56,80 41 38 
+210,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+211,13:-8:-8.-648,in,Note off 64 Velocity 64,1,64,80 40 40 
+212,13:-8:-8.-648,in,Note on 64 Velocity 87,1,87,90 40 57 
+213,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+214,13:-8:-8.-648,in,Note on 62 Velocity 28,1,28,90 3E 1C 
+215,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+216,13:-8:-8.-648,in,Note off 64 Velocity 36,1,36,80 40 24 
+217,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+218,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+219,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+220,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+221,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+222,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+223,13:-8:-8.-648,in,Note off 62 Velocity 46,1,46,80 3E 2E 
+224,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+225,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+226,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+227,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+228,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+229,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 86,1,86,B0 01 56 
+230,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 85,1,85,B0 01 55 
+231,13:-8:-8.-648,in,Note on 60 Velocity 26,1,26,90 3C 1A 
+232,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 84,1,84,B0 01 54 
+233,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 83,1,83,B0 01 53 
+234,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 81,1,81,B0 01 51 
+235,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 83,1,83,B0 01 53 
+236,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 84,1,84,B0 01 54 
+237,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 85,1,85,B0 01 55 
+238,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 86,1,86,B0 01 56 
+239,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+240,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+241,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+242,13:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+243,14:-8:-8.-648,in,Note off 60 Velocity 60,1,60,80 3C 3C 
+244,14:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+245,14:-8:-8.-648,in,Note on 60 Velocity 79,1,79,90 3C 4F 
+246,14:-8:-8.-648,in,Note on 67 Velocity 31,1,31,90 43 1F 
+247,14:-8:-8.-648,in,Note off 60 Velocity 32,1,32,80 3C 20 
+248,14:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+249,14:-8:-8.-648,in,Controller Modulation Wheel (coarse): 95,1,95,B0 01 5F 
+250,14:-8:-8.-648,in,Controller Modulation Wheel (coarse): 96,1,96,B0 01 60 
+251,14:-8:-8.-648,in,Controller Modulation Wheel (coarse): 97,1,97,B0 01 61 
+252,14:-8:-8.-648,in,Controller Modulation Wheel (coarse): 99,1,99,B0 01 63 
+253,14:-8:-8.-648,in,Controller Modulation Wheel (coarse): 100,1,100,B0 01 64 
+254,14:-8:-8.-648,in,Note off 67 Velocity 41,1,41,80 43 29 
+255,14:-8:-8.-648,in,Note on 67 Velocity 50,1,50,90 43 32 
+256,14:-8:-8.-648,in,Note on 69 Velocity 35,1,35,90 45 23 
+257,14:-8:-8.-648,in,Note off 67 Velocity 33,1,33,80 43 21 
+258,14:-8:-8.-648,in,Controller Modulation Wheel (coarse): 101,1,101,B0 01 65 
+259,14:-8:-8.-648,in,Controller Modulation Wheel (coarse): 102,1,102,B0 01 66 
+260,14:-8:-8.-648,in,Controller Modulation Wheel (coarse): 104,1,104,B0 01 68 
+261,14:-8:-8.-648,in,Note off 69 Velocity 38,1,38,80 45 26 
+262,14:-8:-8.-648,in,Controller Modulation Wheel (coarse): 105,1,105,B0 01 69 
+263,14:-8:-8.-648,in,Note on 69 Velocity 38,1,38,90 45 26 
+264,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 104,1,104,B0 01 68 
+265,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 102,1,102,B0 01 66 
+266,15:-8:-8.-648,in,Note on 67 Velocity 13,1,13,90 43 0D 
+267,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 101,1,101,B0 01 65 
+268,15:-8:-8.-648,in,Note off 69 Velocity 36,1,36,80 45 24 
+269,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 100,1,100,B0 01 64 
+270,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 99,1,99,B0 01 63 
+271,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 97,1,97,B0 01 61 
+272,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 96,1,96,B0 01 60 
+273,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 95,1,95,B0 01 5F 
+274,15:-8:-8.-648,in,Note off 67 Velocity 10,1,10,80 43 0A 
+275,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+276,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+277,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+278,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+279,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+280,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+281,15:-8:-8.-648,in,Note on 65 Velocity 30,1,30,90 41 1E 
+282,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 86,1,86,B0 01 56 
+283,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 88,1,88,B0 01 58 
+284,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+285,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+286,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+287,15:-8:-8.-648,in,Note off 65 Velocity 60,1,60,80 41 3C 
+288,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+289,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+290,15:-8:-8.-648,in,Note on 65 Velocity 65,1,65,90 41 41 
+291,15:-8:-8.-648,in,Controller Modulation Wheel (coarse): 95,1,95,B0 01 5F 
+292,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+293,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+294,16:-8:-8.-648,in,Note on 64 Velocity 26,1,26,90 40 1A 
+295,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+296,16:-8:-8.-648,in,Note off 65 Velocity 47,1,47,80 41 2F 
+297,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+298,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+299,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+300,16:-8:-8.-648,in,Note off 64 Velocity 39,1,39,80 40 27 
+301,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+302,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 95,1,95,B0 01 5F 
+303,16:-8:-8.-648,in,Note on 64 Velocity 73,1,73,90 40 49 
+304,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 94,1,94,B0 01 5E 
+305,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 93,1,93,B0 01 5D 
+306,16:-8:-8.-648,in,Note on 62 Velocity 34,1,34,90 3E 22 
+307,16:-8:-8.-648,in,Note off 64 Velocity 35,1,35,80 40 23 
+308,16:-8:-8.-648,in,Note off 62 Velocity 36,1,36,80 3E 24 
+309,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 91,1,91,B0 01 5B 
+310,16:-8:-8.-648,in,Note on 62 Velocity 34,1,34,90 3E 22 
+311,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+312,16:-8:-8.-648,in,Controller Modulation Wheel (coarse): 89,1,89,B0 01 59 
+313,17:-8:-8.-648,in,Note on 60 Velocity 23,1,23,90 3C 17 
+314,17:-8:-8.-648,in,Note off 62 Velocity 34,1,34,80 3E 22 
+315,17:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+316,17:-8:-8.-648,in,Note off 60 Velocity 18,1,18,80 3C 12 
+317,19:-8:-8.-648,in,Controller Modulation Wheel (coarse): 0,1,0,B0 01 00 
+318,19:-8:-8.-648,in,Controller Modulation Wheel (coarse): 0,1,0,B0 01 00 
+319,19:-8:-8.-648,in,Controller Modulation Wheel (coarse): 0,1,0,B0 01 00 
+320,19:-8:-8.-648,in,Controller Modulation Wheel (coarse): 0,1,0,B0 01 00 
+321,19:-8:-8.-648,in,Controller Modulation Wheel (coarse): 0,1,0,B0 01 00 
+322,19:-8:-8.-648,in,Controller Modulation Wheel (coarse): 90,1,90,B0 01 5A 
+
